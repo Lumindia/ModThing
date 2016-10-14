@@ -17,7 +17,7 @@ public class ModItems {
 
     public static void preInit() {
 
-        tutorialItem = new Item().setUnlocalizedName("tutorial_item").setCreativeTab(ModThing.tabTutorial);
+        tutorialItem = new ItemTutorialItem("tutorial_item").setUnlocalizedName("modthing.tutorial_item").setCreativeTab(ModThing.tabTutorial);
 
         registerItems();
     }

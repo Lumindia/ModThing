@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "modthing:items/tutorial_item"
+  }
+
+}
