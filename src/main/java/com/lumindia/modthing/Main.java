@@ -1,6 +1,5 @@
-package com.example.modthing;
+package com.lumindia.modthing;
 
-import com.example.modthing.items.ModItems;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -9,15 +8,15 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = Main.MODID, name = Main.MODNAME, version = Main.VERSION)
+@Mod(modid = Main.MODID, name = Main.NAME, version = Main.VERSION)
 
 public class Main
 {
     public static final String MODID = "modthing";
-    public static final String MODNAME = "A Modded Thing";
+    public static final String NAME = "A Modded Thing";
     public static final String VERSION = "1.0";
 
-    @SidedProxy(clientSide = "com.example.modthing.ClientProxy", serverSide = "com.example.modthing.ServerProxy")
+    @SidedProxy(clientSide = "ClientProxy", serverSide = "ServerProxy")
     public static CommonProxy proxy;
 
     @Instance
@@ -26,7 +25,8 @@ public class Main
     @EventHandler
     public void preInit(FMLPreInitializationEvent e)
     {
-        ModItems.createItems();
+
+
     }
 
     @EventHandler
@@ -36,6 +36,8 @@ public class Main
     }
 
     @EventHandler
-    public void postInit(FMLPostInitializationEvent e) {
+    public void postInit(FMLPostInitializationEvent e)
+    {
+
     }
 }

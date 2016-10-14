@@ -1,4 +1,4 @@
-package com.example.modthing;
+package com.lumindia.modthing;
 
 /**
  * Created by Lumindia on 10/12/2016.
