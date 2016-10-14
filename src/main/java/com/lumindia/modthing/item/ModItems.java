@@ -31,7 +31,6 @@ public class ModItems {
     }
 
     public static void registerRender(Item item) {
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher();
         ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
     }
 

@@ -27,10 +27,9 @@ public class ModThing {
 
     @EventHandler
     public void init(FMLPreInitializationEvent event) {
-        tabTutorial = new CreativeTabMT(CreativeTabs.getNextID(), "tab_tutorial");
-        proxy.preInit(event);
         ModItems.preInit();
-
+        proxy.preInit(event);
+        tabTutorial = new CreativeTabMT(CreativeTabs.getNextID(), "tab_tutorial");
     }
 
     @EventHandler
