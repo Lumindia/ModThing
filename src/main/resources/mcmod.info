@@ -1,14 +1,14 @@
 [
 {
-  "modid": "modThing",
-  "name": "Mod Thing",
-  "description": "Example placeholder mod.",
+  "modid": "modthing",
+  "name": "My First Mod",
+  "description": "Lumindia's first mod. Sliding into the kiddie pool!",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["Lumindia"],
+  "credits": "WayofFlowingTime for being patient as I stumble through this.",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []

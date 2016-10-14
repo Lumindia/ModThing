@@ -1,7 +1,5 @@
 package com.lumindia.modthing.proxy;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -11,25 +9,22 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
  */
 public class ClientProxy extends CommonProxy {
 
-    @SidedProxy(clientSide = "com.lumindia.modthing.ClientProxy", serverSide = "com.lumindia.modthing.CommonProxy")
-    public static CommonProxy proxy;
 
-    @Mod.Instance
-
+    @Override
     public void preInit(FMLPreInitializationEvent event) {
 
-        proxy.preInit(event);
+
     }
 
     @Override
     public void init(FMLInitializationEvent event) {
 
-        proxy.init(event);
+
     }
 
     @Override
     public void postInit(FMLPostInitializationEvent event) {
 
-        proxy.postInit(event);
+
     }
 }

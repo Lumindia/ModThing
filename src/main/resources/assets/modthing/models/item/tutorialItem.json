@@ -1,6 +1,0 @@
-{
-  "parent":"modthing:item/standard_item",
-  "textures": {
-    "layer0":"modthing:item/tutorial_item"
-  }
-}

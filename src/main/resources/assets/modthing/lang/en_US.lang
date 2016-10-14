@@ -1,4 +1,8 @@
 #English US Language file for Mod Thing
 
+#Creative Tab
+itemGroup.tab_tutorial=Tutorial Mod
+
 #Items
-item.tutorialItem.name=Tutorial Item
+
+#Blocks
