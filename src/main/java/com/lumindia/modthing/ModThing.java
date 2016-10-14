@@ -1,5 +1,6 @@
 package com.lumindia.modthing;
 
+import com.lumindia.modthing.item.ModItems;
 import com.lumindia.modthing.proxy.CommonProxy;
 import com.lumindia.modthing.tab.CreativeTabMT;
 import net.minecraft.creativetab.CreativeTabs;
@@ -26,8 +27,8 @@ public class ModThing {
 
     @EventHandler
     public void init(FMLPreInitializationEvent event) {
-
         proxy.preInit(event);
+        ModItems.preInit();
         tabTutorial = new CreativeTabMT(CreativeTabs.getNextID(), "tab_tutorial");
     }
 
