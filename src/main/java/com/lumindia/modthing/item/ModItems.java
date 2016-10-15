@@ -6,6 +6,7 @@ import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 /**
@@ -17,7 +18,7 @@ public class ModItems {
 
     public static void preInit() {
 
-        tutorialItem = new ItemTutorialItem("tutorial_item").setUnlocalizedName("modthing.tutorial_item").setCreativeTab(ModThing.tabTutorial);
+        tutorialItem = new ItemTutorialItem(EnumHelper.addToolMaterial("TUTORIAL", 3, 100, 8, 10, 30), "tutorial_item").setUnlocalizedName("modthing.tutorial_item").setCreativeTab(ModThing.tabTutorial);
 
         registerItems();
     }

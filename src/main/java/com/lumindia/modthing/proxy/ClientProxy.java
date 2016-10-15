@@ -1,5 +1,6 @@
 package com.lumindia.modthing.proxy;
 
+import com.lumindia.modthing.block.ModBlocks;
 import com.lumindia.modthing.item.ModItems;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -15,6 +16,7 @@ public class ClientProxy extends CommonProxy {
     public void preInit(FMLPreInitializationEvent event) {
 
         ModItems.registerRenders();
+        ModBlocks.registerRenders();
 
     }
 
